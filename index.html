@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <style>
+
+            /*Navbar TOP*/
+            .navbar a {
+                display: flex;
+                text-align: center;
+                justify-content: flex-start;
+                color: black;
+                font-size: 13px;
+                margin-right: 5px;
+                margin-left: 5px;
+                padding: 0px;
+                opacity: 70%;
+                font-weight: normal;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar li {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline;
+            }
+            .navbar ul.left {
+                position: fixed;
+                display: inline-flex;
+                justify-content: flex-start;
+                top: 0px;
+                width: 50vw;
+                padding: 0px;
+                left: 1%;
+                line-height: 28px;
+                height: 28px;
+                vertical-align: middle;
+            }
+            .navbar ul.right {
+                position: fixed;
+                display: inline-flex;
+                justify-content: flex-end;
+                align-items: center;
+                top: 0px;
+                width: 50vw;
+                padding: 0px;
+                right: 1%;
+                vertical-align: middle;
+            }
+            .navbar a:hover {
+                text-decoration: underline;
+            }
+            /*Navbar BOTTOM*/
+            .navbarbot a {
+                display: flex;
+                text-align: center;
+                justify-content: flex-start;
+                color: black;
+                font-size: 15px;
+                margin-right: 5px;
+                margin-left: 5px;
+                padding: 0px;
+                padding-left: 15px;
+                opacity: 60%;
+                font-weight: normal;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbarbot li {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline;
+            }
+            .navbarbot ul.leftbot {
+                position: fixed;
+                display: inline-flex;
+                justify-content: flex-start;
+                bottom: 0px;
+                width: 50vw;
+                padding: 0px;
+                left: 1%;
+                line-height: 28px;
+                height: 28px;
+                vertical-align: middle;
+            }
+            .navbarbot ul.rightbot {
+                position: fixed;
+                display: inline-flex;
+                justify-content: flex-end;
+                align-items: center;
+                bottom: 0px;
+                width: 50vw;
+                padding: 0px;
+                right: 1%;
+                vertical-align: middle;
+            }
+            .navbarbot a:hover {
+                text-decoration: underline;
+            }
+            /*Navbar END*/
+
+            #footercolor {
+                position: absolute;
+                height: 50px;
+                width: 100%;
+                bottom: 0px;
+                left: 0px;
+                border-top: 1px solid lightgray;
+                background-color:  #f2f2f2;
+            }
+
+            #google-logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 200px;
+            }
+            #buttons {
+                display: flex;
+                height: 35px;
+                padding-left: 16px;
+                padding-right: 16px;
+                min-width: 56px;
+                font-size: 14px;
+                justify-content: center;
+                opacity: 70%;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #sbutton:hover {
+                color: black;
+                background-color: #f9f9f9;
+            }
+            #lbutton:hover {
+                color: black;
+                background-color: #f9f9f9;
+            }
+            #sbutton {
+                margin-right: 20px;
+                border: 1px solid #f2f2f2;
+                color: #5F6368;
+                cursor: pointer;
+            }
+            #lbutton {
+                border: 1px solid #f2f2f2;
+                color: #5F6368;
+                cursor: pointer;
+            }
+            #sbar {
+                display: flex;
+                border-radius: 24px;
+                height: 44px;
+                width: 582px;
+                border: 1px solid lightgray;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                background-image: url(search_black_24dp.svg);
+                background-position: 3%;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                text-indent: 50px;
+            }
+            #sbar:hover {
+                box-shadow: 0 1px 6px 0 lightgray;
+            }
+            #sbar:focus {
+                outline: none;
+            }
+            body {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+                border: none;
+            }
+            #collimage {
+                display: inline-flex;
+                height: 25px;
+                width: 25px;
+                opacity: 50%;
+                top: 0px;
+                vertical-align: middle;
+            }
+            #signinbutton {
+                display: inline-flex;
+                background-color: #4285f4;
+                color: white;
+                line-height: 28px;
+                height: 28px;
+                font-weight: bold;
+                top: 0px;
+                padding: 0 12px;
+                border: 1px solid #4285f4;;
+                vertical-align: middle;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><Google.com</title>
+    </head>
+    <body>
+        <nav id="navbar1" class="navbar">
+            <ul class="left">
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Store</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#gmail">Gmail</a></li>
+                <li><a href="#images">images</a></li>
+                <li><a href="#collections"><img id="collimage"src="apps_black_24dp.svg" alt="Icon"></a></li>
+                <li><a id="signinbutton" href="#signin">Sign In</a></li>
+            </ul>
+        </nav>
+         <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <input id="sbar" type="search"></input>
+            <div id="buttons">
+                <button id="sbutton">Google Search</button>
+                <button id="lbutton">I'm Feeling Lucky</button>
+            </div>
+    </body>
+    <footer class="sidefooter">
+        <div id="footercolor">
+        <nav id="navbar2" class="navbarbot">
+            <ul class="leftbot">
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#howto">How Search works</a></li>
+            </ul>
+            <ul class="rightbot">
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </div>
+    </footer>
+</html>
